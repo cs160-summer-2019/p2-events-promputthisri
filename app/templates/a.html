@@ -69,30 +69,28 @@
 <script type="text/javascript">
   //task1//
   $(document).ready(function() {
-    $('#bg-purple').on('click', () => {
-      $('#bg-purple').hide();
+    $('.bg-purple').on('click', () => {
+      $('.bg-purple').hide();
     });
   //end of task1//
   //task2//
-    $('bg-green').on('click', () => {
-      $('bg-green, bg-blue').hide();
+    $('.bg-green').on('click', () => {
+      $('.bg-green, .bg-blue').hide();
     });
   //end of task2//
   //task3 could I use this//
-    $('#p2-border').on('click', () => {
-      $('#p2-border').hide();
-      $(this).show();
+    $('.bg-orange.p2-border').on('click', () => {
+      $('.bg-orange.p2-border').hide();
     });
   //end of task3//
   //task 4//
-    $('gradient-circle').hover(function() {
-       $('gradient-circle').hide();
+    $('#gradient-circle').hover(function() {
+       $('#gradient-circle').hide();
     });
   //end of task4//
   //reset button//
-    $('reset').on('click', () => {
-      alert();
-      $("#p2-circle").show();
+    $('#reset').on('click', () => {
+      $(".p2-circle").show();
     });
     
   });
