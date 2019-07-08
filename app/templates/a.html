@@ -21,7 +21,8 @@
 				<h3>Task 1a</h3>
 			</div>
 			<div class="col-6">
-				<button class="btn btn-light float-right">
+        <!-- I added reset ID -->
+				<button class="btn btn-light float-right" id="reset">
 					Reset
 				</button>
 			</div>
@@ -60,10 +61,41 @@
 		</div>
 			
 	</div>
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-	// your solution here
+  //task1//
+  $(document).ready(function() {
+    $('#bg-purple').on('click', () => {
+      $('#bg-purple').hide();
+    });
+  //end of task1//
+  //task2//
+    $('bg-green').on('click', () => {
+      $('bg-green, bg-blue').hide();
+    });
+  //end of task2//
+  //task3 could I use this//
+    $('#p2-border').on('click', () => {
+      $('#p2-border').hide();
+      $(this).show();
+    });
+  //end of task3//
+  //task 4//
+    $('gradient-circle').hover(function() {
+       $('gradient-circle').hide();
+    });
+  //end of task4//
+  //reset button//
+    $('reset').on('click', () => {
+      alert();
+      $("#p2-circle").show();
+    });
+    
+  });
 
 </script>
 </body>
